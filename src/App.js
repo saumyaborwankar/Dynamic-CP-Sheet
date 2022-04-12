@@ -3,9 +3,9 @@ import './App.css';
 import Problem from './Problem';
 import {BrowserRouter as Router, Switch, Route, Routes} from 'react-router-dom'
 import Login from './login';
-import Cookies from 'universal-cookie';
+// import Cookies from 'universal-cookie';
 import { read_cookie } from 'sfcookies';
-
+import Cookies from 'js-cookie'
 // const cookies = new Cookies();
 
 // cookies.set('myCat', 'Pacman', { path: '/' });
@@ -28,7 +28,8 @@ const Ladder=()=>{
   const [todisplay,setToDisplay]=useState([]);
   // const [user,setUser] = useState("");
   // const [query,setQuery]=useState("");
-  const query=read_cookie('namedOFCookie');
+  // let query=read_cookie('namedOFCookie');
+  let query=Cookies.get('auth')
 
   const allProbs=[[282,'A',"https://codeforces.com/problemset/problem/282/A"],[514,'A',"https://codeforces.com/contest/514/problem/A"],[52,'C',"https://codeforces.com/contest/52/problem/C"],[1023,'D',"https://codeforces.com/contest/1023/problem/D"]];
 
@@ -104,7 +105,9 @@ const Ladder=()=>{
     // setAllProb(allNeededProbs);
 
   };
-  
+  const backToLogin = e =>{
+    window.location.href = '/login';
+  }
 
 return(
   <div className='App'>
@@ -121,6 +124,7 @@ return(
               <th>Solved</th>
           </tr>
           {todisplay.map(problem=>( <Problem key={problem[2]} title={problem[2]} solved={problem[3]} link={problem[4]} /> ))}
+          <button onClick={backToLogin}>Back to Login</button>
     </table>
   </div>
   
