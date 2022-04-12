@@ -16,7 +16,7 @@ const App = () => {
   return(
     <Router>
         <Routes>
-          <Route path="/login" exact element={<Login/>} />
+          <Route path="/" exact element={<Login/>} />
           <Route path="/ladder" exact element={<Ladder/>} />
         </Routes> 
     </Router>
@@ -106,7 +106,7 @@ const Ladder=()=>{
 
   };
   const backToLogin = e =>{
-    window.location.href = '/login';
+    window.location.href = '/';
   }
 
 return(
