@@ -1,7 +1,10 @@
 import React from "react";
 
-const Problem = ({title,solved,link}) => {
-    
+const Problem = ({title,solved,topic,link}) => {
+    const trueStyle = {background: 'green',color : 'green', fontSize:'23px'}
+    const falseStyle = {background: 'red',color : 'red', fontSize:'23px'}
+
+
     return(
         <tr>
             {/* <table>
@@ -9,9 +12,10 @@ const Problem = ({title,solved,link}) => {
                     <th>Problem</th>
                     <th>Solved</th>
                 </tr> */}
-                
+                    <td>{topic}</td>
                     <td><a href={link} target="_blank">{title}</a></td>
-                    <td>{solved}</td>
+                    
+                    {solved==='true' ? <td style={trueStyle}></td>:<td style={falseStyle}></td>}
                 
                 {/* </table> */}
             {/* <h1>{title}</h1>

@@ -1,5 +1,5 @@
 {
-    "Implementation / Constructive: (10*5=50)": [
+    "Implementation / Constructive:": [
         "https://codeforces.com/problemset/problem/282/A",
         "https://codeforces.com/contest/514/problem/A",
         "https://codeforces.com/problemset/problem/263/A",
@@ -51,7 +51,7 @@
         "https://codeforces.com/problemset/problem/1237/A",
         "https://codeforces.com/problemset/problem/486/B"
     ],
-    "Maths: (10*5=50)": [
+    "Maths:": [
         "https://codeforces.com/problemset/problem/1337/A",
         "https://codeforces.com/problemset/problem/1389/A",
         "https://codeforces.com/problemset/problem/959/A",
@@ -103,7 +103,7 @@
         "https://codeforces.com/problemset/problem/630/D",
         "https://codeforces.com/problemset/problem/1355/A"
     ],
-    "Binary Search:\u00a0": [
+    "Binary Search:": [
         "https://codeforces.com/contest/371/problem/C",
         "https://codeforces.com/contest/670/problem/D1",
         "https://codeforces.com/contest/287/problem/B",
@@ -118,9 +118,6 @@
         "https://codeforces.com/contest/1370/problem/D"
     ],
     "Prime, Sieve, Prime Factorisation:": [
-        "https://www.spoj.com/problems/PRIME1/cstart=10",
-        "https://www.spoj.com/problems/TDPRIMES/",
-        "https://www.spoj.com/problems/TDKPRIME/",
         "https://codeforces.com/contest/264/problem/B",
         "https://codeforces.com/contest/735/problem/D",
         "https://codeforces.com/contest/546/problem/D",
@@ -142,7 +139,7 @@
         "https://codeforces.com/problemset/problem/1391/D",
         "https://codeforces.com/problemset/problem/1491/D"
     ],
-    "Stack/Queues/PriorityQueues:\u00a0": [
+    "Stack/Queues/PriorityQueues:": [
         "https://codeforces.com/contest/343/problem/B",
         "https://codeforces.com/contest/158/problem/C",
         "https://codeforces.com/contest/5/problem/C",
@@ -155,7 +152,7 @@
         "https://codeforces.com/contest/1092/problem/D2",
         "https://codeforces.com/contest/1156/problem/E",
         "https://codeforces.com/contest/911/problem/E",
-        "https://codeforces.com/contest/507/problem/E?locale=en"
+        "https://codeforces.com/contest/507/problem/E"
     ],
     "String Algorithms:": [
         "https://codeforces.com/problemset/problem/271/D",
@@ -172,22 +169,15 @@
         "https://codeforces.com/contest/126/problem/B",
         "https://codeforces.com/contest/432/problem/D",
         "https://codeforces.com/contest/1537/problem/E2",
-        "https://www.spoj.com/problems/NUMOFPAL/",
-        "https://www.spoj.com/problems/LPS/",
-        "https://www.spoj.com/problems/MSUBSTR/",
-        "https://www.spoj.com/problems/EPALIN/",
         "https://codeforces.com/contest/1080/problem/E"
     ],
     "BFS": [
         "https://codeforces.com/problemset/problem/1006/F"
     ],
-    "Tree\u2019s:": [
-        "https://cses.fi/problemset/task/1674",
-        "https://cses.fi/problemset/task/1130",
+    "Trees:": [
         "https://codeforces.com/gym/102694/problem/A",
         "https://codeforces.com/gym/102694/problem/B",
         "https://codeforces.com/contest/1006/problem/E",
-        "https://cses.fi/problemset/task/1133",
         "https://codeforces.com/contest/1294/problem/F"
     ],
     "LCA": [
@@ -246,7 +236,7 @@
         "https://codeforces.com/contest/113/problem/B",
         "https://codeforces.com/contest/282/problem/E"
     ],
-    "Dynamic Programming:\u00a0": [
+    "Dynamic Programming:": [
         "https://codeforces.com/problemset/problem/702/A",
         "https://codeforces.com/problemset/problem/894/A",
         "https://codeforces.com/problemset/problem/1501/B",
@@ -283,7 +273,7 @@
         "https://codeforces.com/contest/507/problem/D",
         "https://codeforces.com/contest/540/problem/D"
     ],
-    "Disjoint Set:\u00a0": [
+    "Disjoint Set:": [
         "https://codeforces.com/problemset/problem/1534/C",
         "https://codeforces.com/problemset/problem/217/A",
         "https://codeforces.com/contest/277/problem/A",
@@ -295,7 +285,7 @@
         "https://codeforces.com/problemset/problem/1494/D",
         "https://codeforces.com/problemset/problem/455/C"
     ],
-    "Sqrt Decomposition/ MO\u2019s algo:": [
+    "Sqrt Decomposition/ MOs algo:": [
         "https://codeforces.com/contest/86/problem/D",
         "https://codeforces.com/contest/617/problem/E",
         "https://codeforces.com/contest/220/problem/B",
@@ -329,8 +319,8 @@
         "https://codeforces.com/contest/482/problem/B",
         "https://codeforces.com/contest/1187/problem/D",
         "https://codeforces.com/contest/920/problem/F",
-        "https://codeforces.com/contest/1535/problem/D?locale=en",
-        "https://codeforces.com/contest/438/problem/D?locale=en",
+        "https://codeforces.com/contest/1535/problem/D",
+        "https://codeforces.com/contest/438/problem/D",
         "https://codeforces.com/contest/1556/problem/E",
         "https://codeforces.com/contest/1567/problem/E"
     ],

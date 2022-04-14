@@ -6,6 +6,7 @@ import Login from './login';
 // import Cookies from 'universal-cookie';
 import { read_cookie } from 'sfcookies';
 import Cookies from 'js-cookie'
+import { list } from './list';
 // const cookies = new Cookies();
 
 // cookies.set('myCat', 'Pacman', { path: '/' });
@@ -31,8 +32,7 @@ const Ladder=()=>{
   // let query=read_cookie('namedOFCookie');
   let query=Cookies.get('auth')
 
-  const allProbs=[[282,'A',"https://codeforces.com/problemset/problem/282/A"],[514,'A',"https://codeforces.com/contest/514/problem/A"],[52,'C',"https://codeforces.com/contest/52/problem/C"],[1023,'D',"https://codeforces.com/contest/1023/problem/D"]];
-
+  const allProbs=list;
   useEffect((e)=>{
     getReqAllprob();
     console.log(query);
@@ -45,7 +45,7 @@ const Ladder=()=>{
     for(let j=0;j<allProbs.length;j++){
       for(let i=0;i<prob.problems.length;i++){
         if(allProbs[j][0]===prob.problems[i].contestId && allProbs[j][1]===prob.problems[i].index){
-          list.push([prob.problems[i].contestId,prob.problems[i].index,prob.problems[i].name,"false",allProbs[j][2]]);
+          list.push([prob.problems[i].contestId,prob.problems[i].index,prob.problems[i].name,"false",allProbs[j][2],allProbs[j][3]]);
         }
       }
     }
@@ -79,10 +79,10 @@ const Ladder=()=>{
       if(indexOfArray([allNeededProbs[i][0],allNeededProbs[i][1]],hash) !== -1 ){
       // if(mysolvedlist.indexOf([allNeededProbs[i][0],allNeededProbs[i][1]]) != -1){
         // console.log('Reached_herer');
-        display.push([allNeededProbs[i][0],allNeededProbs[i][1],allNeededProbs[i][2],"true",allNeededProbs[i][4]]);
+        display.push([allNeededProbs[i][0],allNeededProbs[i][1],allNeededProbs[i][2],"true",allNeededProbs[i][4],allNeededProbs[i][5]]);
       }
       else{
-        display.push([allNeededProbs[i][0],allNeededProbs[i][1],allNeededProbs[i][2],allNeededProbs[i][3],allNeededProbs[i][4]]);
+        display.push([allNeededProbs[i][0],allNeededProbs[i][1],allNeededProbs[i][2],allNeededProbs[i][3],allNeededProbs[i][4],allNeededProbs[i][5]]);
       }
     }
     // console.log(display);
@@ -91,7 +91,7 @@ const Ladder=()=>{
 
 
   const getReqAllprob = async ()=>{
-    const response=await fetch('https://codeforces.com/api/problemset.problems');
+    const response=await fetch('https://codeforces.com/api/problemset.problems?locale=en');
     const data=await response.json();
     const allNeededProbs=filterNeeded(data.result);
 
@@ -118,13 +118,14 @@ return(
       </button> */}
     
     {/* </form> */}
-    <table>
+    <table className='center'>
           <tr>
+              <th>Topic</th>
               <th>Problem</th>
               <th>Solved</th>
           </tr>
-          {todisplay.map(problem=>( <Problem key={problem[2]} title={problem[2]} solved={problem[3]} link={problem[4]} /> ))}
-          <button onClick={backToLogin}>Back to Login</button>
+          {todisplay.map(problem=>( <Problem key={problem[2]} title={problem[2]} solved={problem[3]} topic={problem[5]} link={problem[4]} /> ))}
+          <button className='center' onClick={backToLogin}>Back to Login</button>
     </table>
   </div>
   
