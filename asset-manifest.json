@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dynamic-cp-sheet/static/css/main.c1aad490.css",
+    "main.js": "/dynamic-cp-sheet/static/js/main.9de517b9.js",
+    "index.html": "/dynamic-cp-sheet/index.html",
+    "main.c1aad490.css.map": "/dynamic-cp-sheet/static/css/main.c1aad490.css.map",
+    "main.9de517b9.js.map": "/dynamic-cp-sheet/static/js/main.9de517b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1aad490.css",
+    "static/js/main.9de517b9.js"
+  ]
+}
