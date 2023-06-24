@@ -163,7 +163,7 @@ function Home() {
     <div>
       <GithubCorner
         size={100}
-        href="https://github.com/sahilsaha7773/dynamic-cp-sheet"
+        href="https://github.com/saumyaborwankar/dynamic-cp-sheet"
         // bannerColor="white"
         // octoColor="black"
       />
@@ -238,8 +238,12 @@ function Home() {
           </Form.Text>
           <p style={{ margin: "20px 0 0 0" }}>
             Made with ❤️ and ☕ by{" "}
-            <a target="_blank" rel="noreferrer" href="https://sahilsaha.me">
-              Sahil Saha
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/saumyaborwankar"
+            >
+              Saumya Borwankar
             </a>
           </p>
         </div>
